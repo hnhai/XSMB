@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="com.hai.xsmb.crawling-core.main" target="1.8" />
+      <module name="com.hai.xsmb.crawling-core.test" target="1.8" />
+      <module name="com.hai.xsmb.xsmb-batch.main" target="1.8" />
+      <module name="com.hai.xsmb.xsmb-batch.test" target="1.8" />
+      <module name="com.hai.xsmb.xsmb-core.main" target="1.8" />
+      <module name="com.hai.xsmb.xsmb-core.test" target="1.8" />
+      <module name="com.hai.xsmb.xsmb-web.main" target="1.8" />
+      <module name="com.hai.xsmb.xsmb-web.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

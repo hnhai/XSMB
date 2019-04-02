@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.hai.xsmb.XSMB.iml" filepath="$PROJECT_DIR$/.idea/modules/com.hai.xsmb.XSMB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/xsmb-batch/com.hai.xsmb.xsmb-batch.iml" filepath="$PROJECT_DIR$/.idea/modules/xsmb-batch/com.hai.xsmb.xsmb-batch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/xsmb-batch/com.hai.xsmb.xsmb-batch.main.iml" filepath="$PROJECT_DIR$/.idea/modules/xsmb-batch/com.hai.xsmb.xsmb-batch.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/xsmb-batch/com.hai.xsmb.xsmb-batch.test.iml" filepath="$PROJECT_DIR$/.idea/modules/xsmb-batch/com.hai.xsmb.xsmb-batch.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/xsmb-core/com.hai.xsmb.xsmb-core.iml" filepath="$PROJECT_DIR$/.idea/modules/xsmb-core/com.hai.xsmb.xsmb-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/xsmb-core/com.hai.xsmb.xsmb-core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/xsmb-core/com.hai.xsmb.xsmb-core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/xsmb-core/com.hai.xsmb.xsmb-core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/xsmb-core/com.hai.xsmb.xsmb-core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/xsmb-web/com.hai.xsmb.xsmb-web.iml" filepath="$PROJECT_DIR$/.idea/modules/xsmb-web/com.hai.xsmb.xsmb-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/xsmb-web/com.hai.xsmb.xsmb-web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/xsmb-web/com.hai.xsmb.xsmb-web.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/xsmb-web/com.hai.xsmb.xsmb-web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/xsmb-web/com.hai.xsmb.xsmb-web.test.iml" />
+    </modules>
+  </component>
+</project>
