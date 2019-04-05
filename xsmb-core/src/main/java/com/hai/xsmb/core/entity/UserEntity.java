@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@JsonIgnoreProperties(value = {"userRoleEntities", "password"})
+@JsonIgnoreProperties(value = "userRoleEntities")
 
 @Entity
 @Table(name = "USERS")
