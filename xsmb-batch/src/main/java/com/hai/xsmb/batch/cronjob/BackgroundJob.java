@@ -1,14 +1,19 @@
 package com.hai.xsmb.batch.cronjob;
 
 import com.hai.xsmb.batch.service.ResultService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
+import sun.rmi.runtime.Log;
 
 @Configuration
 @EnableScheduling
 public class BackgroundJob {
+
+    private static final Logger LOG = LoggerFactory.getLogger(BackgroundJob.class);
 
     @Autowired
     private ResultService resultService;
@@ -20,11 +25,12 @@ public class BackgroundJob {
         try {
             success = resultService.craw();
         }catch (Exception e){
-
-            //Todo refacter
+            LOG.error("Error when craw: " + e.getMessage(), e);
         }
         if(!success){
             // Todo refacter
+        }else{
+            LOG.info("Craw Success");
         }
     }
 }

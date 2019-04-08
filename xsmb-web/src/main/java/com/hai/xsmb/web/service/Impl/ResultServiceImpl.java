@@ -6,6 +6,7 @@ import com.hai.xsmb.web.service.ResultService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -17,5 +18,10 @@ public class ResultServiceImpl implements ResultService {
     @Override
     public List<ResultEntity> loadResults() {
         return resultRepository.findAll();
+    }
+
+    @Override
+    public ResultEntity loadByDate(Date date) {
+        return resultRepository.getByDateAndDeleted(date, Boolean.FALSE);
     }
 }
