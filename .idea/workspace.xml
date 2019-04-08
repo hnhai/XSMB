@@ -6,30 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8434301d-0078-45a6-8552-cd422d4b1f64" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/30377777-7dca-405d-b23e-1aaf883cd41f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/30377777-7dca-405d-b23e-1aaf883cd41f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/abbf75aa-2136-42c7-8208-445dd02448ac.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/abbf75aa-2136-42c7-8208-445dd02448ac/storage_v2/_src_/schema/xsmb.0Ek4AA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/xsmb-batch/com.hai.xsmb.xsmb-batch.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/xsmb-batch/com.hai.xsmb.xsmb-batch.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/xsmb-batch/com.hai.xsmb.xsmb-batch.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/xsmb-batch/com.hai.xsmb.xsmb-batch.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/xsmb-core/com.hai.xsmb.xsmb-core.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/xsmb-core/com.hai.xsmb.xsmb-core.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/xsmb-core/com.hai.xsmb.xsmb-core.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/xsmb-core/com.hai.xsmb.xsmb-core.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/xsmb-web/com.hai.xsmb.xsmb-web.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/xsmb-web/com.hai.xsmb.xsmb-web.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/xsmb-web/com.hai.xsmb.xsmb-web.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/xsmb-web/com.hai.xsmb.xsmb-web.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xsmb-batch/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/xsmb-batch/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xsmb-core/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/xsmb-core/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xsmb-core/src/main/java/com/hai/xsmb/core/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/xsmb-core/src/main/java/com/hai/xsmb/core/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xsmb-core/src/main/java/com/hai/xsmb/core/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/xsmb-core/src/main/java/com/hai/xsmb/core/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xsmb-web/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xsmb-web/out/production/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xsmb-web/src/main/java/com/hai/xsmb/web/configuration/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/xsmb-web/src/main/java/com/hai/xsmb/web/configuration/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xsmb-web/src/main/java/com/hai/xsmb/web/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xsmb-web/src/main/java/com/hai/xsmb/web/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xsmb-web/src/main/java/com/hai/xsmb/web/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xsmb-web/src/main/java/com/hai/xsmb/web/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xsmb-web/src/main/java/com/hai/xsmb/web/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xsmb-web/src/main/java/com/hai/xsmb/web/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xsmb-web/src/main/java/com/hai/xsmb/web/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xsmb-web/src/main/java/com/hai/xsmb/web/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xsmb-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xsmb-web/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -106,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+            <state relative-caret-position="290">
+              <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -210,7 +186,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554695688112" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554695773208" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -258,12 +234,12 @@
       <updated>1554446200281</updated>
       <workItem from="1554446202981" duration="4931000" />
       <workItem from="1554689109910" duration="622000" />
-      <workItem from="1554693891645" duration="1881000" />
+      <workItem from="1554693891645" duration="1964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7434000" />
+    <option name="totallyTimeSpent" value="7517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1017" extended-state="6" />
@@ -290,7 +266,7 @@
       <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.5551802" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32995495" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="bottom" id="Version Control" order="16" />
@@ -416,8 +392,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        <state relative-caret-position="290">
+          <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
         </state>
       </provider>
     </entry>
