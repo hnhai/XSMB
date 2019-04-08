@@ -2,11 +2,14 @@ package com.hai.xsmb.web.service.Impl;
 
 import com.hai.xsmb.core.entity.UserEntity;
 import com.hai.xsmb.core.repository.UserRepository;
+import com.hai.xsmb.web.dto.UserDTO;
 import com.hai.xsmb.web.service.UserService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -28,8 +31,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<UserEntity> loadAll() {
-        return userRepository.findAll();
+    public List<UserDTO> loadAll() {
+        List<UserDTO> userDTOS = new ArrayList<>();
+        List<UserEntity> users = userRepository.findAll();
+        users.forEach(user -> userDTOS.add(new UserDTO(user.getId(), user.getUsername(), user.getEmail())));
+        return userDTOS;
     }
 
     @Override
@@ -38,6 +44,6 @@ public class UserServiceImpl implements UserService {
         if (user == null){
             user = userRepository.findByEmailAndDeleted(userName, Boolean.FALSE);
         }
-        return passwordEncoder.matches(password, user.getPassword());
+        return password!= null && passwordEncoder.matches(password, user.getPassword());
     }
 }

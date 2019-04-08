@@ -1,3 +1,39 @@
+buildscript {
+    ext {
+        springBootVersion = '2.0.8.RELEASE'
+    }
+    repositories {
+        mavenLocal()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies { classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") }
+}
+
+plugins {
+    id "org.springframework.boot" version "2.0.7.RELEASE"
+    id "io.spring.dependency-management" version "1.0.6.RELEASE"
+}
+
 jar {
     baseName = 'xsmb-batch'
+}
+
+dependencies {
+    implementation project(':xsmb-core')
+    implementation('org.springframework.boot:spring-boot-starter')
+    implementation('org.springframework.boot:spring-boot-starter-jdbc')
+
+    /* MySQL JDBC */
+    implementation("mysql:mysql-connector-java")
+
+    /* Selenium */
+    implementation("org.seleniumhq.selenium:selenium-chrome-driver")
+    implementation('org.seleniumhq.selenium:selenium-support')
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+}
+
+bootJar {
+    launchScript()
 }

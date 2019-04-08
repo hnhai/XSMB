@@ -1,6 +1,7 @@
 buildscript {
     ext {
         cglibVersion = '3.2.9'
+        awsSdkVersion = '1.11.458'
     }
 
     repositories {
@@ -21,6 +22,14 @@ dependencies {
     api('org.springframework.boot:spring-boot-starter-mail')
     api("cglib:cglib:${cglibVersion}")
 
+    /* SpringJMS + SQS */
+    api("org.springframework:spring-jms")
+    api("com.amazonaws:aws-java-sdk-core:${awsSdkVersion}")
+    api("com.amazonaws:aws-java-sdk-sqs:${awsSdkVersion}")
+    api("com.amazonaws:amazon-sqs-java-messaging-lib:1.0.4")
+
+    /* AWS S3 */
+    api("com.amazonaws:aws-java-sdk-s3:${awsSdkVersion}")
     /* jsoup */
     implementation("com.ibm.icu:icu4j:63.1")
 
