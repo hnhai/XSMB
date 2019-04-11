@@ -4,6 +4,7 @@ import com.hai.xsmb.core.entity.UserEntity;
 import com.hai.xsmb.core.repository.UserRepository;
 import com.hai.xsmb.web.dto.UserDTO;
 import com.hai.xsmb.web.service.UserService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -40,10 +41,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Boolean loadByUsernameAndPassWord(String userName, String password) {
+        if(StringUtils.isEmpty(password)){
+            return false;
+        }
         UserEntity user = userRepository.findByUsernameAndDeleted(userName, Boolean.FALSE);
         if (user == null){
             user = userRepository.findByEmailAndDeleted(userName, Boolean.FALSE);
         }
-        return password!= null && passwordEncoder.matches(password, user.getPassword());
+        return user != null && passwordEncoder.matches(password, user.getPassword());
     }
 }

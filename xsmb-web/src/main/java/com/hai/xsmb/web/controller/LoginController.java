@@ -1,6 +1,7 @@
 package com.hai.xsmb.web.controller;
 
-import com.hai.xsmb.core.entity.UserEntity;
+
+import com.hai.xsmb.web.dto.UserLogin;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -17,7 +18,7 @@ public class LoginController extends BaseController {
     private static final Logger LOG = LoggerFactory.getLogger(LoginController.class);
 
     @PostMapping("/login")
-    public ResponseEntity login(@RequestBody UserEntity userLogin) {
+    public ResponseEntity login(@RequestBody UserLogin userLogin) {
         String result = "";
         HttpStatus httpStatus = null;
         try {
