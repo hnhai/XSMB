@@ -1,15 +1,21 @@
 package com.hai.xsmb.batch.service.impl;
 
 import com.hai.xsmb.batch.constant.XoSoDotCom;
+import com.hai.xsmb.batch.quazt.CrawJob;
 import com.hai.xsmb.batch.service.ResultService;
 import com.hai.xsmb.core.entity.ResultEntity;
 import com.hai.xsmb.core.repository.ResultRepository;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.quartz.Scheduler;
+import org.quartz.TriggerKey;
+import org.quartz.impl.triggers.CronTriggerImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.Date;
 
 @Service
@@ -17,6 +23,9 @@ public class ResutlServiceImpl implements ResultService {
 
     @Autowired
     private ResultRepository resultRepository;
+
+    @Autowired
+    private SchedulerFactoryBean schedulerFactoryBean;
 
     private final String BASE_URL = "https://xoso.com.vn/xo-so-mien-bac/xsmb-p1.html";
 
@@ -58,10 +67,37 @@ public class ResutlServiceImpl implements ResultService {
             Date toDay = new Date();
             result.setDate(toDay);
             resultRepository.save(result);
+            changeCronExprestion();
         }catch (Exception e){
             return Boolean.FALSE;
             // Todo Refacter
         }
         return Boolean.TRUE;
+    }
+
+    @Transactional(rollbackOn = Exception.class)
+    public void changeCronExprestion(){
+        new java.util.Timer().schedule(
+                new java.util.TimerTask() {
+                    @Override
+                    public void run() {
+                        try {
+                            resultRepository.deleteAll();
+                            Scheduler scheduler = schedulerFactoryBean.getScheduler();
+                            TriggerKey triggerKey = TriggerKey.triggerKey(CrawJob.TRIGGER_NAME,
+                                    CrawJob.GROUP);
+                            if(scheduler.checkExists(triggerKey)){
+                                CronTriggerImpl cronTrigger = (CronTriggerImpl) scheduler.getTrigger(triggerKey);
+                                cronTrigger.setCronExpression("0 01 11 * * ?");
+                                scheduler.rescheduleJob(triggerKey, cronTrigger);
+                            }
+                        }catch (Exception e){
+
+                        }
+                    }
+                },
+                10000
+        );
+
     }
 }
